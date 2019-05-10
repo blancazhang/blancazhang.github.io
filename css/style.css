@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: #fefefe;
+    margin-top: 2em;
+	font-size: 15px;
+}
+
+/*h1: Name on top of page*/
+h1 {
+	font-family: "Helvetica Neue", serif;
+	color: #454545;
+	font-size: 4em;
+	letter-spacing: 0.02em;
+	padding-left: 1%;	
+}
+
+h1 span {
+	background-color: #ffd6d3;
+}
+
+/*Name at top of each content page*/
+h2 {
+	font-family: "Helvetica Neue", sans-serif;
+	color: #454545;
+	font-size: 10em;
+	letter-spacing: 0.01em;
+}
+
+h2 span {
+	background-color: #ffd6d3;
+}
+
+/*ABOUT PAGE*/
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+/*Headings/titles for each project*/
+h4 {
+	font-family: inherit;
+	font-size: 22px;
+	font-weight: 700;
+	padding-left: 10%;
+}
+
+/*headings for process*/
+h5 {
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 10%;
+}
+
+p {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10px;
+}
+
+/*notes on the bottom of the page*/
+
+note {
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: inherit;
+	font-size: 12px;
+}
+
+/*Centered text on homepage*/
+.container1 {
+	padding-top: 5%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/*TOPNAV*/
+.topnav {
+	positon: fixed;
+    background-color: white;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+}
+
+.topnav a {
+    float: right;
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-decoration-color: #afafaf;
+	font-size: 16px;
+}
+
+.topnav a:hover{
+	color: #555555;
+}
+
+/*active topnav page*/
+.active {
+	background-color: #ffd6d3;
+}
+
+/*GRID ON PORTFOLIO PAGE*/
+#grid {
+	max-width: 900px;
+	margin: 0 auto;  
+	position: middle;
+	text-align: center;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 20px;
+	list-style: none;
+	background-color: white;
+}
+
+#grid li {
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin-left: 12%;
+	margin-right: 5%;
+}
+
+/*Wrapper for each cell*/
+.cell {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+/*images in grid*/
+.gridImg {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	border: none;
+	transform: scale(1);
+	transition: all 1s;
+}
+
+#grid li:hover .gridImg {
+	transform: scale(1.05);
+}
+
+.overlay {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background: #555555 no-repeat center 20%;
+	background-size: 50px 50px;
+	opacity: 0;
+	transition: all 0.6s;
+}
+
+#grid li:hover .overlay {
+	opacity: 0.8;
+}
+
+.overlayText {
+	display: block;
+	padding: 0 30px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	top: 40%;
+	color: white;
+	opacity: 0;
+	transform: translateY(-20px);
+	trasition: all .3s;
+}
+
+#grid li:hover .overlayText {
+	transform: translateY(0px);
+	opacity: 0.9;
+}
+
+/*CENTERED IMAGES IN THE PROCESS*/
+
+.centerImg img {
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+/*The centered long images*/
+
+img.center-banner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+}
+
+/*ALINED IMAGES IN THE PROCESS*/
+img.right {
+	float: right;
+	padding: 0 10% 0 10%;
+	max-width: 300px;
+	height: auto;
+}
+
+img.left {
+	float: left;
+	padding: 0 10% 0 10%;
+	max-width: 300px;
+	height: auto;
+}
+
+/*float images left but with less padding and larger size*/
+
+img.left-less-padding {
+	float: left;
+	padding: 0 5% 0 10%;
+	max-width: 500px;
+	height: auto;
+}
+
+img.center {
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+	padding: 0;
+	max-width: 40%;
+	max-height: auto;
+}
+
+/*FOOTER*/
+.footer {
+	bottom: 0;
+	width: 100%;
+	padding-top: 5%;
+	height: 50px;
+	background-color: white;
+	font-size: 14px;
+	text-align: center;
+}
+
+/*remove the little line things in the links*/
+.footer a {
+	text-decoration: none;
+}
+
+.footer img {
+	max-width: 100%;
+}
